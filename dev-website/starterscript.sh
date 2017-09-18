@@ -3,10 +3,6 @@
 timedatectl set-timezone Asia/Jakarta
 chmod -R 777 /opt /usr
 
-#remove temp and work directory
-rm -rf /opt/liferayee7sp4/tomcat-8.0.32/temp
-rm -rf /opt/liferayee7sp4/tomcat-8.0.32/work
-
 #installing latest patch
 export PATH=$PATH:/opt/liferayee7sp4/jdk/bin
 /opt/liferayee7sp4/patching-tool/patching-tool.sh info
